@@ -2,9 +2,11 @@
 
  $text = $_POST['paragrafo'];    // Testo inserito da un utente
 
- $textcensured = $_POST['banner'];
+ $textcensured  = $_POST['banner'];
 
- $textbanner = str_ireplace($banner, '***' , $text);
+ $textbanner = str_replace($textcensured, '***' , $text); // Parola da censurare
+
+ $lentext = strlen($text);
 
 
 
@@ -19,9 +21,10 @@
   </head>
   <body>
 
-  <h1> paragrafo:<?= $text?></h1>
-  <h1><?= $textcensured?></h1>
-  <h1><?=$textbannwe?></h1>
+  <h1> paragrafo: <?= $text?></h1>
+  <h1> Parola da censurare: <?=$textcensured?></h1>
+  <h1> Parola censurata: <?=$textbanner?></h1>
+  <h1>Lunghezza paragrafo:  <?=$lantext?></h1>
 
 
   </body>
