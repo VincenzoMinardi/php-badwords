@@ -8,6 +8,8 @@
 
  $lentext = strlen($text);
 
+ $lentextbanner = strlen($textbanner)
+
 
 
 
@@ -21,10 +23,12 @@
   </head>
   <body>
 
-  <h1> paragrafo: <?= $text?></h1>
+  <h1> paragrafo: <?=$text?></h1>
   <h1> Parola da censurare: <?=$textcensured?></h1>
+  <h1>Lunghezza paragrafo:  <?=$lentext?></h1>
   <h1> Parola censurata: <?=$textbanner?></h1>
-  <h1>Lunghezza paragrafo:  <?=$lantext?></h1>
+  <h1>Lunghezza paragrafo con censura: <?=$lentextbanner?></h1>
+  
 
 
   </body>
